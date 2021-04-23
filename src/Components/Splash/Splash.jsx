@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 
 const Splash = () => {
   return (
-    <div className="h-screen w-screen bg-black flex justify-center items-center">
+    <motion.div
+      className="h-screen w-screen flex justify-center items-center"
+      style={{
+        backgroundColor: "var(--splash-screen)",
+      }}
+    >
       <motion.svg
         width="466"
         height="60"
@@ -438,7 +443,7 @@ const Splash = () => {
           mask="url(#path-1-outside-1)"
         />
       </motion.svg>
-    </div>
+    </motion.div>
   );
 };
 
