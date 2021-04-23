@@ -51,20 +51,7 @@ const Splash = () => {
           <motion.path
             initial="hidden"
             animate="visible"
-            variants={{
-              hidden: {
-                opacity: 0,
-                pathLength: 0,
-              },
-              visible: {
-                opacity: 1,
-                pathLength: 1,
-                transition: {
-                  duration: 2,
-                  ease: "linear",
-                },
-              },
-            }}
+            variants={pathVariant}
             d="M53.8582 7.17601V57H47.3062V19.848L30.7462 57H26.1382L9.50616 19.776V57H2.95416V7.17601H10.0102L28.4422 48.36L46.8742 7.17601H53.8582Z"
           />
           <motion.path
