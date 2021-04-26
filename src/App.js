@@ -1,14 +1,13 @@
-import { motion } from "framer-motion";
 import React from "react";
 import "./App.css";
+import Home from "./Components/Home/Home";
 import Splash from "./Components/Splash/Splash";
 
 function App() {
   return (
     <div className="App">
-      <motion.div>
-        <Splash />
-      </motion.div>
+      <Splash />
+      <Home />
     </div>
   );
 }

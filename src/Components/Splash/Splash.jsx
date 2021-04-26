@@ -1,24 +1,48 @@
 import { motion } from "framer-motion";
 
-const Splash = () => {
+const Splash = (props) => {
   const pathVariant = {
     hidden: {
       opacity: 0,
       pathLength: 0,
+      fill: "rgba(255, 255, 255, 0)",
     },
     visible: {
       opacity: 1,
       pathLength: 1,
+      fill: "rgba(255, 255, 255, 1)",
+
       transition: {
         duration: 2,
         ease: "linear",
+        fill: {
+          delay: 1.5,
+          duration: 0.5,
+        },
       },
     },
   };
 
   return (
     <motion.div
-      className="h-screen w-screen flex justify-center items-center"
+      initial={{
+        scale: 1,
+        opacity: 1,
+      }}
+      animate={{
+        scale: 2,
+        opacity: 0,
+        transformOrigin: "center",
+        display: "none",
+        transition: {
+          delay: 3,
+          duration: 0.3,
+          display: {
+            delay: 3.3,
+          },
+        },
+      }}
+      className="h-screen w-screen flex justify-center items-center overflow-hidden z-10 absolute top-0 left-0"
       style={{
         backgroundColor: "var(--splash-screen)",
       }}
