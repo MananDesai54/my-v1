@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Layout = ({ children, className }) => {
+const Layout = ({ children, className, style }) => {
   return (
     <motion.div
       initial={{
@@ -13,10 +13,11 @@ const Layout = ({ children, className }) => {
           staggerChildren: 0.5,
         },
       }}
-      className={[
-        "w-2/3 mx-auto h-screen flex flex-col justify-center",
-        className,
-      ].join(" ")}
+      className={["w-2/3 mx-auto flex flex-col", className].join(" ")}
+      style={{
+        ...style,
+        minHeight: "95vh",
+      }}
     >
       {children}
     </motion.div>

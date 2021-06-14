@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import React from "react";
 import Layout from "../Layout/Layout";
 import Title from "../Title/Title";
+import PDF from "../../assets/Resume.pdf";
 
-const Intro = () => {
+const Intro = (props) => {
   const variant = {
     initial: {
       opacity: 0,
@@ -14,7 +15,7 @@ const Intro = () => {
   };
 
   return (
-    <Layout>
+    <Layout className="justify-center">
       <Title title="About" number={1} />
       <motion.h1
         variants={variant}
@@ -56,6 +57,20 @@ const Intro = () => {
           love watching Talks about new technologies.
         </p>
       </motion.div>
+      <div className="flex">
+        <button
+          onClick={() => props.history.push("/work")}
+          className="mr-2 p-2 border-2 border-white text-white bg-none rounded-md transition-all duration-300 hover:bg-white hover:text-black"
+        >
+          Know More
+        </button>
+        <a
+          href={PDF}
+          className="ml-2 p-2 border-2 border-white text-white bg-none rounded-md transition-all duration-300 hover:bg-white hover:text-black"
+        >
+          Resume
+        </a>
+      </div>
     </Layout>
   );
 };

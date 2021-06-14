@@ -23,7 +23,7 @@ export const work = [
     techs: ["TypeScript", "React Native", "React.js", "Firebase Analytics"],
   },
   {
-    company: "SLOP",
+    company: "SLOP, Gandhinagar",
     role: "Open Source Developer",
     duration: "September-2020 - November-2020",
     description:
@@ -37,7 +37,7 @@ export const work = [
     ],
   },
   {
-    company: "22Bate7",
+    company: "22Bate7, Ahmedabad",
     role: "Web Developer Intern",
     duration: "June-2020 - August-2020",
     description:

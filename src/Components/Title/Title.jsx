@@ -18,7 +18,7 @@ const Title = ({ title, number }) => {
       id="about"
     >
       <p className="text-xl mr-2">0{number}.</p>
-      <h1 className="text-2xl">{title}</h1>
+      <h1 className="text-2xl font-bold">{title}</h1>
       <span
         className="ml-6 w-1/3 bg-gray-600"
         style={{

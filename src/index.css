@@ -30,14 +30,10 @@ span {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--background-secondary);
-  border-radius: 10px;
-  z-index: 100000;
+  display: none;
 }
 *::-webkit-scrollbar {
-  background: var(--background-primary);
-  width: 10px;
-  z-index: 100000;
+  display: none;
 }
 
 *::selection {
