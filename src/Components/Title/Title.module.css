@@ -1,0 +1,6 @@
+.Title p {
+  color: var(--background-accent);
+}
+.Title h1 {
+  color: var(--text-secondary);
+}
