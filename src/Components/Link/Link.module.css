@@ -2,8 +2,12 @@
   color: var(--text-secondary);
   margin-bottom: 0;
 }
+.ActiveLink {
+  color: var(--text-primary);
+}
 
-.Link::before {
+.Link::before,
+.ActiveLink::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -18,7 +22,8 @@
 }
 
 .Link:hover::before,
-.Link:active::before {
+.Link:active::before,
+.ActiveLink::before {
   transform: scale(1);
   transition: all 400ms;
   opacity: 1;

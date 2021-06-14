@@ -1,10 +1,20 @@
+import { motion } from "framer-motion";
 import React from "react";
 import classes from "./Title.module.css";
 
 const Title = ({ title, number }) => {
   return (
-    <div
-      className={["flex items-center relative mb-8", classes.Title].join(" ")}
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      className={[
+        "flex items-center relative mb-8 overflow-hidden",
+        classes.Title,
+      ].join(" ")}
       id="about"
     >
       <p className="text-xl mr-2">0{number}.</p>
@@ -15,7 +25,7 @@ const Title = ({ title, number }) => {
           height: "0.5px",
         }}
       ></span>
-    </div>
+    </motion.div>
   );
 };
 

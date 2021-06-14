@@ -5,9 +5,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  overflow: hidden;
 }
 
 :root {
@@ -21,10 +32,12 @@
 *::-webkit-scrollbar-thumb {
   background: var(--background-secondary);
   border-radius: 10px;
+  z-index: 100000;
 }
 *::-webkit-scrollbar {
   background: var(--background-primary);
   width: 10px;
+  z-index: 100000;
 }
 
 *::selection {

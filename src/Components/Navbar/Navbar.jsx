@@ -7,7 +7,7 @@ const Navbar = () => {
     <div
       className={[
         classes.Navbar,
-        "p-4 border-gray-700 shadow-lg fixed w-screen flex justify-center items-center text-xl",
+        "p-4 border-gray-700 shadow-lg fixed w-screen flex justify-center items-center text-xl z-50",
       ].join(" ")}
     >
       {/* <Logo /> */}
