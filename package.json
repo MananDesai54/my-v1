@@ -1,4 +1,5 @@
 {
+  "homepage": "https://MananDesai54.github.io/my-v1",
   "name": "v1",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,9 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "build:style": "tailwind build src/App.css -o src/tailwind.css"
+    "build:style": "tailwind build src/App.css -o src/tailwind.css",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",
     "autoprefixer": "^9",
+    "gh-pages": "^3.2.1",
     "postcss": "^8",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
