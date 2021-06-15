@@ -5,7 +5,7 @@ const Footer = () => {
         © {new Date().getFullYear()}
       </p>
       <a
-        className="underline font-bold text-gray-400"
+        className=" font-bold text-gray-400"
         href="http://github.com/MananDesai54"
       >
         Manan Desai

@@ -3,7 +3,7 @@ import classes from "./Link.module.css";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Link = ({ name, path, delay }) => {
+const Link = ({ name, path, delay, click }) => {
   return (
     <motion.div
       initial={{
@@ -17,6 +17,7 @@ const Link = ({ name, path, delay }) => {
       }}
     >
       <NavLink
+        onClick={click}
         exact
         to={path}
         className={[

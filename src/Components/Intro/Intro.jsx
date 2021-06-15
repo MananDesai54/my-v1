@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Layout from "../Layout/Layout";
+import Resume from "../Resume/Resume";
 import Title from "../Title/Title";
-import PDF from "../../assets/Resume.pdf";
 
 const Intro = (props) => {
   const variant = {
@@ -15,13 +15,13 @@ const Intro = (props) => {
   };
 
   return (
-    <Layout className="justify-center">
+    <Layout className="justify-start lg:justify-center mt-24 lg:mt-0 mb-4">
       <Title title="About" number={1} />
       <motion.h1
         variants={variant}
         initial="initial"
         animate="animate"
-        className="text-6xl font-semibold my-4"
+        className=" text-3xl md:text-6xl font-semibold my-4"
       >
         Hello, I am Manan Desai 👋
       </motion.h1>
@@ -29,7 +29,7 @@ const Intro = (props) => {
         variants={variant}
         initial="initial"
         animate="animate"
-        className="text-4xl font-bold my-4"
+        className="text-xl md:text-4xl font-bold my-4"
         style={{
           color: "var(--text-secondary)",
         }}
@@ -64,12 +64,7 @@ const Intro = (props) => {
         >
           Know More
         </button>
-        <a
-          href={PDF}
-          className="ml-2 p-2 border-2 border-white text-white bg-none rounded-md transition-all duration-300 hover:bg-white hover:text-black"
-        >
-          Resume
-        </a>
+        <Resume />
       </div>
     </Layout>
   );

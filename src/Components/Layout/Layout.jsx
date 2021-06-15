@@ -13,7 +13,9 @@ const Layout = ({ children, className, style }) => {
           staggerChildren: 0.5,
         },
       }}
-      className={["w-2/3 mx-auto flex flex-col", className].join(" ")}
+      className={["mx-8 flex flex-col md:w-2/3 md:mx-auto", className].join(
+        " "
+      )}
       style={{
         ...style,
         minHeight: "95vh",

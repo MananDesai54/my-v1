@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "../../Link/Link";
 
-const Links = () => {
+const Links = ({ className, click, delay }) => {
   return (
     <motion.div
       initial={{
@@ -11,13 +11,18 @@ const Links = () => {
       animate={{
         opacity: 1,
       }}
-      className="flex"
+      className={["flex", className].join(" ")}
     >
-      <Link name="About" path="/" delay="0" />
-      <Link name="Work" path="/work" delay="0.1" />
-      <Link name="Technology" path="/tech" delay="0.2" />
-      <Link name="Projects" path="/project" delay="0.3" />
-      <Link name="Education" path="/education" delay="0.4" />
+      <Link name="About" path="/" delay={delay} click={click} />
+      <Link name="Work" path="/work" delay={delay + 0.1} click={click} />
+      <Link name="Technology" path="/tech" delay={delay + 0.2} click={click} />
+      <Link name="Projects" path="/project" delay={delay + 0.3} click={click} />
+      <Link
+        name="Education"
+        path="/education"
+        delay={delay + 0.4}
+        click={click}
+      />
     </motion.div>
   );
 };

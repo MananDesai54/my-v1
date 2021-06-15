@@ -8,9 +8,9 @@ const Educations = () => {
   const education = useMemo(() => eduDetails, []);
   return (
     <Layout
-      className="justify-center w-1/2"
+      className="justify-center"
       style={{
-        width: "50%",
+        width: "80%",
       }}
     >
       <Title title="Education" number={5} />

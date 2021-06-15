@@ -26,8 +26,10 @@ const Home = () => {
           <Route path="/education" exact component={Educations} />
         </Switch>
       </AnimatePresence>
-      <SocialMedia />
-      <Mail />
+      <div className=" md:block hidden">
+        <SocialMedia />
+        <Mail />
+      </div>
       <Footer />
     </div>
   );
