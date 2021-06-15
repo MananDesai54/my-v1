@@ -5,6 +5,7 @@ import Logo from "../Logo/Logo";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Resume from "../Resume/Resume";
+import SocialMedia from "../Connect/Social";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -44,6 +45,7 @@ const Navbar = () => {
             click={() => setShow(false)}
             delay={1}
           />
+          <SocialMedia mobile />
         </motion.div>
       </div>
     </div>

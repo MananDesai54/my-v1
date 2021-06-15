@@ -20,11 +20,11 @@ const Title = ({ title, number }) => {
       <p className="text-xl mr-2">0{number}.</p>
       <h1 className="text-2xl font-bold">{title}</h1>
       <span
-        className="ml-6 w-1/3 bg-gray-600"
+        className="ml-6 w-1/3 bg-gray-600 hidden md:block"
         style={{
           height: "0.5px",
         }}
-      ></span>
+      />
     </motion.div>
   );
 };

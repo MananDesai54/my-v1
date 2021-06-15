@@ -20,7 +20,7 @@ const Home = () => {
       <AnimatePresence>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={Intro} />
-          <Route path="/work" exact component={Work} />
+          <Route path="/experience" exact component={Work} />
           <Route path="/tech" exact component={Techs} />
           <Route path="/project" exact component={Projects} />
           <Route path="/education" exact component={Educations} />
