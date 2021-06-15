@@ -1,18 +1,18 @@
 export const technologies = [
   {
-    type: "Core",
+    title: "Core",
     techs: ["Data Structure", "Database", "OOP", "Functional Programming"],
   },
   {
-    type: "Languages",
+    title: "Languages",
     techs: ["JavaScript", "TypeScript", "C", "HTML", "CSS", "Python"],
   },
   {
-    type: "Database",
+    title: "Database",
     techs: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
   },
   {
-    type: "Frameworks & Libraries",
+    title: "Frameworks & Libraries",
     techs: [
       "Node.js",
       "React.js",
@@ -25,11 +25,11 @@ export const technologies = [
     ],
   },
   {
-    type: "Tools",
+    title: "Tools",
     techs: ["Linux", "Visual Studio Code", "Git", "Github", "Docker"],
   },
   {
-    type: "Cloud Techs",
+    title: "Cloud Techs",
     techs: [
       "AWS S3",
       "Firebase Auth, Cloud Storage, Firestore, Analytics, Hosting",

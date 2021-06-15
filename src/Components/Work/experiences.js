@@ -1,6 +1,6 @@
 export const work = [
   {
-    company: "SakhaTech Information Systems Pvt. Ltd, Bangalore",
+    title: "SakhaTech Information Systems Pvt. Ltd, Bangalore",
     role: "Web and Blockchain developer Intern",
     duration: "May-2021 - Present",
     description:
@@ -15,7 +15,7 @@ export const work = [
     ],
   },
   {
-    company: "Fundamentalee, Bangalore",
+    title: "Fundamentalee, Bangalore",
     role: "Mobile and Mobile App Developer",
     duration: "March-2021 - April-2021",
     description:
@@ -23,7 +23,7 @@ export const work = [
     techs: ["TypeScript", "React Native", "React.js", "Firebase Analytics"],
   },
   {
-    company: "SLOP, Gandhinagar",
+    title: "SLOP, Gandhinagar",
     role: "Open Source Developer",
     duration: "September-2020 - November-2020",
     description:
@@ -37,7 +37,7 @@ export const work = [
     ],
   },
   {
-    company: "22Bate7, Ahmedabad",
+    title: "22Bate7, Ahmedabad",
     role: "Web Developer Intern",
     duration: "June-2020 - August-2020",
     description:
