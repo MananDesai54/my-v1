@@ -4,7 +4,7 @@ export const work = [
     role: "Web and Blockchain developer Intern",
     duration: "May-2021 - July-2021",
     description:
-      "I working here on Blockchain technology. I worked on creating private blockchain with HyperLedger fabric, Node.js and Docker. I also worked on creating Bridge between Ethereum blockchain and also worked with Polygon and Ethereum Smart contracts. I have used my skills to create Private Blockchain, Smart Contract and own digital coin.",
+      "I worked here on Blockchain technology. I worked on creating private blockchain with HyperLedger fabric, Node.js and Docker. I also worked on creating Bridge between Ethereum blockchain and also worked with Polygon and Ethereum Smart contracts. I have used my skills to create Private Blockchain, Smart Contract and own digital coin.",
     techs: [
       "Blockchain",
       "HyperLedger Fabric",
@@ -12,6 +12,8 @@ export const work = [
       "Node.js",
       "React.js",
       "Docker",
+      "Web3",
+      "Polygon",
     ],
   },
   {
