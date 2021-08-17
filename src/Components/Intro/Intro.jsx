@@ -59,7 +59,7 @@ const Intro = (props) => {
       </motion.div>
       <div className="flex">
         <button
-          onClick={() => props.history.push("/work")}
+          onClick={() => props.history.push("/experience")}
           className="mr-2 p-2 border-2 border-white text-white bg-none rounded-md transition-all duration-300 hover:bg-white hover:text-black"
         >
           Know More

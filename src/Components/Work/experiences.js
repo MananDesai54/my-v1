@@ -2,9 +2,9 @@ export const work = [
   {
     title: "SakhaTech Information Systems Pvt. Ltd, Bangalore",
     role: "Web and Blockchain developer Intern",
-    duration: "May-2021 - Present",
+    duration: "May-2021 - July-2021",
     description:
-      "I working here on Blockchain technology. I mainly work on creating private blockchain with HyperLedger fabric, Node.js and Docker. I am also working on some parts of Ethereum blockchain with Node.js and React.js. I have used my skills to create Private Blockchain, Smart Contract and own digital coin.",
+      "I working here on Blockchain technology. I worked on creating private blockchain with HyperLedger fabric, Node.js and Docker. I also worked on creating Bridge between Ethereum blockchain and also worked with Polygon and Ethereum Smart contracts. I have used my skills to create Private Blockchain, Smart Contract and own digital coin.",
     techs: [
       "Blockchain",
       "HyperLedger Fabric",

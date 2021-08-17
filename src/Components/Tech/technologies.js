@@ -1,11 +1,25 @@
 export const technologies = [
   {
     title: "Core",
-    techs: ["Data Structure", "Database", "OOP", "Functional Programming"],
+    techs: [
+      "Data Structure",
+      "Database",
+      "OOP",
+      "Functional Programming",
+      "Blockchain",
+    ],
   },
   {
     title: "Languages",
-    techs: ["JavaScript", "TypeScript", "C", "HTML", "CSS", "Python"],
+    techs: [
+      "JavaScript",
+      "TypeScript",
+      "C",
+      "HTML",
+      "CSS",
+      "Python",
+      "Solidity",
+    ],
   },
   {
     title: "Database",
@@ -18,10 +32,11 @@ export const technologies = [
       "React.js",
       "React Native",
       "GraphQL",
-      "HyperLedger Fabric",
       "Angular",
       "Next.js",
       "Express.js",
+      "Ethereum",
+      "Web3",
     ],
   },
   {
