@@ -6,8 +6,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Resume from "../Resume/Resume";
 import SocialMedia from "../Connect/Social";
+import Visitors from "../Visitors/Visitors";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -17,12 +18,16 @@ const Navbar = () => {
         "p-4 border-gray-700 shadow-lg fixed w-screen flex md:justify-center items-center text-xl z-50",
       ].join(" ")}
     >
-      <div className="hidden md:block">
+      <div className="hidden md:flex items-center">
         <Links delay={0} click={() => {}} />
+        <div className="absolute right-2">
+          <Visitors postView={props.postView} />
+        </div>
       </div>
       <div className="md:hidden flex justify-between items-center w-full">
         <Logo />
         <div className="flex items-center">
+          <Visitors postView={props.props} />
           <Resume />
           <FaBars className="ml-4" onClick={() => setShow(true)} size="24" />
         </div>

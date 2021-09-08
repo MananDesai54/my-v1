@@ -1,0 +1,20 @@
+.Views {
+  background: var(--text-secondary);
+  color: var(--background-primary);
+  top: 2.5rem;
+}
+.Views::after {
+  content: "";
+  height: 5rem;
+  width: 2rem;
+  background: var(--text-secondary);
+  position: absolute;
+  right: 1rem;
+  top: -100%;
+}
+
+@media (max-width: 768px) {
+  .Views {
+    top: 4rem;
+  }
+}

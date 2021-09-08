@@ -11,12 +11,12 @@ import Educations from "../Education/Educations";
 import SocialMedia from "../Connect/Social";
 import Mail from "../Connect/Mail";
 
-const Home = () => {
+const Home = (props) => {
   const location = useLocation();
 
   return (
     <div className={[classes.Home, "h-screen w-screen text-white"].join(" ")}>
-      <Navbar />
+      <Navbar postView={props.postView} />
       <AnimatePresence>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={Intro} />
