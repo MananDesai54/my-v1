@@ -4,13 +4,12 @@ import Home from "./Components/Home/Home";
 
 function App() {
   const [postView, setPostView] = useState(false);
-
   useEffect(() => {
     const myVisitor = JSON.parse(localStorage.getItem("seen"));
     if (!myVisitor) {
       localStorage.setItem("seen", JSON.stringify(true));
     }
-    fetch("http://localhost:5000/views", {
+    fetch(`${process.env.REACT_APP_API_URL}/views`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
