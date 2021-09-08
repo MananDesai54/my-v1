@@ -11,7 +11,6 @@ const Visitors = (props) => {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
-    console.log(props.postView);
     fetch(`${process.env.REACT_APP_API_URL}/views`)
       .then((res) => res.json())
       .then((result) => {

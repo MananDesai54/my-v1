@@ -18,8 +18,8 @@ function App() {
       body: JSON.stringify({ unique: !myVisitor }),
     })
       .then((res) => res.json())
-      .then(console.log)
-      .catch(console.log)
+      .then(() => console.log())
+      .catch(() => console.log())
       .finally(() => setPostView(true));
   }, []);
   return (
